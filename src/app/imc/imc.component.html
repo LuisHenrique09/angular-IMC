@@ -2,22 +2,25 @@
 
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">Peso:</span>
-    <input type="number" name="peso" class="form-control" placeholder="Username" aria-label="Peso" aria-describedby="basic-addon1" [(ngModel)]="peso">
+    <input type="number" name="peso" class="form-control" placeholder="Peso(Kg) Ex: 80" aria-label="Peso"
+      aria-describedby="basic-addon1" [(ngModel)]="peso">
   </div>
 
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1">Altura:</span>
-    <input number="number" name="altura" [(ngModel)]="altura" class="form-control" placeholder="Altura" aria-label="Username" aria-describedby="basic-addon1">
+    <input number="number" name="altura" [(ngModel)]="altura" class="form-control" placeholder="Altura(M) Ex: 1.72"
+      aria-label="Altura" aria-describedby="basic-addon1">
   </div>
 
-  <button type="button" (click)="calc()" class="btn btn-outline-success ">Calcular IMC</button>
+  <div class="mb-3 text-center">
+    <button type="button" (click)="calc()" class="btn btn-outline-success ">Calcular IMC</button>
+  </div>
 
   <div class="input-group mb-3">
-    <input name="result" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="result" disabled="">
+    <input name="result" class="form-control" placeholder="result" aria-label="result" aria-describedby="basic-addon1"
+      [(ngModel)]="result" disabled="">
   </div>
 
   <div class="alert alert-success" role="alert">{{mensagem}}</div>
 
 </form>
-
-
